@@ -1,7 +1,7 @@
 @import "nullstyle.scss";
 
 
-$d-width: 1200px;
+$d-width: 1140px;
 
 
 
@@ -23,6 +23,10 @@ $d-width: 1200px;
 // Шапка
 
 .header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
 	background: #313030;
 	margin-bottom: 70px;
 
@@ -69,10 +73,10 @@ $d-width: 1200px;
 
 .main {
 	width: 100%;
-	height: auto;
+	height: 100vh;
 	background-color: #f6f2f2;
 
-	padding:30px 0 70px 0;
+	padding: 160px 0 70px 0;
 
 
 
@@ -192,6 +196,12 @@ $d-width: 1200px;
 	&__btn {
 		color: #ff2d2d;
 		border: 1px solid #ff2d2d;
+		transition: ease 0.2s;
+
+		&:hover {
+			color: #fff;
+			background: #ff2d2d;
+		}
 	}
 
 	@media (max-width: 1200px) {
