@@ -3,16 +3,15 @@
 
 $d-width: 1140px;
 
-
+body {
+	min-width: 1280px;
+	position: relative;
+}
 
 .container {
 	width: 100%;
 	max-width: $d-width;
 	margin: 0 auto;
-	@media (max-width: 1200px) {
-			padding: 0 10px;
-			
-		}
 }
 
 
@@ -176,11 +175,6 @@ $d-width: 1140px;
 
 }
 
-// Section 
-
-.section {
-	
-}
 
 // Сервисы (Вторая секция)
 .services {
@@ -202,26 +196,6 @@ $d-width: 1140px;
 			color: #fff;
 			background: #ff2d2d;
 		}
-	}
-
-	@media (max-width: 1200px) {
-		flex-wrap: wrap;
-	
-		&__content,
-		&__items {
-			flex-basis: 100%;
-			
-		}
-		
-		&__content {
-			text-align: center;
-
-			.services__text {
-				margin: 0 auto;
-			}
-		}
-
-
 	}
 }
 

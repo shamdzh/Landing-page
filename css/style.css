@@ -73,16 +73,15 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------*/
+body {
+  min-width: 1280px;
+  position: relative;
+}
+
 .container {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-  .container {
-    padding: 0 10px;
-  }
 }
 
 .bordered {
@@ -244,23 +243,6 @@ h1, h2, h3, h4, h5, h6 {
 .services__btn:hover {
   color: #fff;
   background: #ff2d2d;
-}
-
-@media (max-width: 1200px) {
-  .services {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .services__content, .services__items {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%;
-  }
-  .services__content {
-    text-align: center;
-  }
-  .services__content .services__text {
-    margin: 0 auto;
-  }
 }
 
 .title {
